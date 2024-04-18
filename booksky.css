@@ -45,19 +45,7 @@ body {
   position: relative;
 }
 
-@media  (max-width:1000px) {
-  .sub-container{
-    flex-basis: 45%;
-  }
-}
-
-@media  (max-width:720px) {
-  .sub-container{
-    flex-basis: 100%;
-  }
-}
-
-.text-title{
+.text-title {
   font-size: 30px;
   letter-spacing: 0.2px;
 }
@@ -143,7 +131,7 @@ body {
 
 .sub-input-container {
   background-color: darkgray;
-  padding: 25px;
+  padding: 20px;
   border: none;
   border-radius: 15px;
   display: flex;
@@ -153,15 +141,13 @@ body {
 
 .input-book {
   font-size: 16px;
-  padding-right: 30px;
   letter-spacing: 0.2px;
 }
 
 .input-author,
 .input-title,
-.input-description{
-  margin-left: 30px;
-  margin-top:5px ;
+.input-description {
+  margin-top: 5px;
   font-size: 15px;
   padding: 2px;
   border: none;
@@ -175,31 +161,46 @@ body {
 
 .input-author::placeholder,
 .input-title::placeholder,
-.input-description::placeholder{
+.input-description::placeholder {
   font-size: 15px;
 }
 
-.input-description{
+.input-description {
   height: 120px;
 }
 
-.input-add-btn, .input-cancel-btn{
+.input-add-btn,
+.input-cancel-btn {
   border: 1px solid white;
   background-color: transparent;
   border-radius: 30px;
   padding: 5px 15px;
   font-size: 16;
-  margin-top: 15px; 
+  margin-top: 15px;
   transition: .15s;
   letter-spacing: 0.2px;
 }
 
-.input-add-btn:hover, .input-cancel-btn:hover{
+.input-add-btn:hover,
+.input-cancel-btn:hover {
   color: darkgray;
   background-color: white;
 }
 
-.input-add-btn:active, .input-cancel-btn:active{
+.input-add-btn:active,
+.input-cancel-btn:active {
   color: white;
   background-color: darkgray;
+}
+
+@media (max-width:1000px) {
+  .sub-container {
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width:720px) {
+  .sub-container {
+    flex-basis: 100%;
+  }
 }
