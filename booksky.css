@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  background: url(booksky\ background.jpg);
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+.heading {
+  margin: 8px 15px;
+  font-size: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  letter-spacing: 0.2px;
+}
+
+.container {
+  margin: 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.sub-container {
+  margin: 15px 10px;
+  padding: 10px;
+  flex-basis: 30%;
+  height: 350px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.02);
+  border: none;
+  border-radius: 20px;
+  position: relative;
+}
+
+@media  (max-width:1000px) {
+  .sub-container{
+    flex-basis: 45%;
+  }
+}
+
+@media  (max-width:720px) {
+  .sub-container{
+    flex-basis: 100%;
+  }
+}
+
+.text-title{
+  font-size: 30px;
+  letter-spacing: 0.2px;
+}
+
+.text-author {
+  margin: 5px 0;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+}
+
+.text-description {
+  margin-bottom: 0.625rem;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+
+.del-btn {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.del-btn {
+  background: url(booksky\ background.jpg);
+  background-size: cover;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+  transition: .15s;
+}
+
+.del-btn:hover {
+  transform: scale(1.05);
+}
+
+.del-btn:active {
+  transform: scale(1);
+}
+
+.add {
+  position: fixed;
+  top: 84%;
+  right: 2%;
+  z-index: 11;
+}
+
+.add-btn {
+  border: none;
+  background: url(booksky\ background.jpg);
+  background-size: cover;
+  padding: 18px 22px;
+  border-radius: 50%;
+  font-size: 30px;
+  transition: .15s;
+  display: flex;
+  align-items: center;
+}
+
+.add-btn:hover {
+  transform: scale(1.05);
+}
+
+.add-btn:active {
+  transform: scale(1);
+}
+
+.input-container {
+  position: fixed;
+  background-color: rgba(144, 144, 144, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 22;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-input-container {
+  background-color: darkgray;
+  padding: 25px;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-book {
+  font-size: 16px;
+  padding-right: 30px;
+  letter-spacing: 0.2px;
+}
+
+.input-author,
+.input-title,
+.input-description{
+  margin-left: 30px;
+  margin-top:5px ;
+  font-size: 15px;
+  padding: 2px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  resize: none;
+  width: 200px;
+  letter-spacing: 0.2px;
+}
+
+.input-author::placeholder,
+.input-title::placeholder,
+.input-description::placeholder{
+  font-size: 15px;
+}
+
+.input-description{
+  height: 120px;
+}
+
+.input-add-btn, .input-cancel-btn{
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-size: 16;
+  margin-top: 15px; 
+  transition: .15s;
+  letter-spacing: 0.2px;
+}
+
+.input-add-btn:hover, .input-cancel-btn:hover{
+  color: darkgray;
+  background-color: white;
+}
+
+.input-add-btn:active, .input-cancel-btn:active{
+  color: white;
+  background-color: darkgray;
+}

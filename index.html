@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booksky</title>
+  <link rel="stylesheet" href="booksky.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="input-container">
+      <table class="sub-input-container">
+        <tr>
+          <td class="input-book">Book Title</td>
+          <td>:</td>
+          <td><input class="input-title" placeholder="Enter the book title" required type="text"></td>
+        </tr>
+        <tr>
+          <td class="input-book">Book Author</td>
+          <td>:</td>
+          <td><input class="input-author" placeholder="Enter the author name" required type="text"></td>
+        </tr>
+        <tr>
+          <td class="input-book">Book Description</td>
+          <td>:</td>
+          <td><textarea placeholder="Write the brief description of the book" required class="input-description"></textarea></td>
+        </tr>
+        <tr>
+          <td><button onclick="cancelBook()" class="input-cancel-btn">Cancel</button></td>
+          <td></td>
+          <td> <button onclick="addBook()" class="input-add-btn">Add</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <header class="nav-bar">
+      <h1 class="heading">Booksky<i class="fa-solid fa-book"></i></h1>
+    </header>
+    <div class="container">
+      <!-- <div class="sub-container">
+        <h1 class="text-title" >Harry Potter</h1>
+        <h2 class="text-author" >J . K . Rowling</h2>
+        <p class="text-description" >Harry Potter and the Philosopher's Stone (Sorcerer's Stone in the US)
+          Harry Potter and the Chamber of Secrets
+          Harry Potter and the Prisoner of Azkaban
+          Harry Potter and the Goblet of Fire
+          Harry Potter and the Order of the Phoenix
+          Harry Potter and the Half-Blood Prince
+          Harry Potter and the Deathly Hallows</p>
+          <button class="del-btn">Trash</button>
+      </div> -->
+    </div>
+    <div class="add">
+      <button title="add-btn" onclick="addPopup()" class="add-btn"><i class="fa-solid fa-plus"></i></button>
+    </div>
+  </div>
+
+
+  <script src="booksky.js"></script>
+</body>
+
+</html>
