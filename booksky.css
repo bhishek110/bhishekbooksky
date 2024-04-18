@@ -147,6 +147,7 @@ body {
 .input-author,
 .input-title,
 .input-description {
+  margin-left: 15px;
   margin-top: 5px;
   font-size: 15px;
   padding: 2px;
