@@ -105,8 +105,8 @@ body {
 
 .add {
   position: fixed;
-  top: 84%;
-  right: 2%;
+  bottom: 5%;
+  right: 5%;
   z-index: 11;
 }
 
